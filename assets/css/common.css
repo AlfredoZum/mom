@@ -1,0 +1,672 @@
+/**
+* @style       Standard Layout
+* @media       screen
+* @version     1.0
+* @author      Alfredo Zum
+* @copyright   OrvelSoft 2017
+* @licensor   	open source
+* @layout      in pixels:
+*              |            788            |
+*              | 10  |      768       | 10 |
+*              | 10  | 27 |    741    | 10 |
+*/
+
+
+body{
+	background:#FFFFFF;
+}
+
+
+/**
+* @section nav
+* @todo menu
+*/
+
+/*********social**********/
+nav.toolBarSocial{
+	position:relative;
+	float:left;
+	width:100%;
+	background:#7f60aa;
+	height:43px;
+}
+
+nav.toolBarSocial .socialMedia{
+	position:relative;
+	width:100%;
+	float:left;
+	background:#7f60aa;
+}
+
+nav.toolBarSocial .socialMedia .imageSocialMedia{
+	position:relative;
+	float:right;
+	padding-right:15%;
+	padding-left:15%;
+}
+
+.imageSocialMedia .imgSocial{
+	float:left;
+	margin-left:15px;
+}
+
+.imgSocial img{
+	cursor:pointer;
+}
+
+nav.toolBarSocial .imgLogo {
+	position:absolute;
+	float:left;
+	background:#FFFFFF;
+	z-index:10;
+	left:15%;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.navLineColor{
+	position:relative;
+	width:100%;
+	float:left;
+	height:3px;
+	background: url(../images/linea_colores.png);
+	background-color:#238790;
+}
+
+/*********menu**********/
+nav.toolBarMenu {
+	position:relative;
+	float:left;
+	width:100%;
+	height:105px;
+	border-bottom: 3px solid rgba(127,96,170,0.14);
+	padding-right:15%;
+	padding-left:15%;
+}
+
+nav.toolBarMenu ul {
+	position:relative;
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	height:105px;
+	width:75%;
+	float:right;
+}
+
+nav.toolBarMenu ul li {
+	width:16.66%;
+	float:left;
+	position:relative;
+	height:105px;
+	border-right:1px solid rgba( 127, 96, 170, .3 );
+	cursor:pointer;
+}
+
+nav.toolBarMenu ul li a {
+	position:relative;
+	float:left;
+	width:100%;
+	color:#7f60aa;
+	text-align:center;
+	padding: 10px 0px;
+	margin-top:35px;
+	font-size: 1.4rem;
+}
+
+nav.toolBarMenu ul li.active a {
+	color:#f35b47;
+}
+
+
+nav.toolBarMenu ul li a:hover {
+	color:#f35b47;
+	text-decoration: none;
+}
+
+.btnBars{
+	display:none;
+}
+
+/**
+* @section nav.toolBar medias query table
+* @todo estilos para el menu en las tabletas
+*/
+
+@media (min-width: 768px  ) and (max-width: 991px){
+	
+	nav.toolBarSocial .socialMedia .imageSocialMedia{
+		padding-right:5%;
+		padding-left:3%;
+	}
+	
+	nav.toolBarSocial .imgLogo {
+		left:5%;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	
+	/*********menu**********/
+	nav.toolBarMenu {
+		width:100%;
+		padding-right:0%;
+		padding-left:25%;
+	}
+	
+	nav.toolBarMenu ul {
+		width:100%;
+	}
+	
+	nav.toolBarMenu ul li:last-of-type {
+		border-right:none;
+	}
+	
+}
+
+@media (max-width: 767px){
+	
+	nav.toolBarSocial{
+		height:auto;
+	}
+	
+	nav.toolBarSocial .imgLogo {
+		position:relative;
+		float:left;
+		padding-left:0;
+		padding-right:0;
+		width:100%;
+		left:0;
+		background:none;
+		text-align:center;
+		height:auto;
+		padding-bottom:15px;
+	}
+	
+	nav.toolBarSocial .socialMedia{
+		position:relative;
+		float:left;
+		width:100%;
+		margin-bottom:10px;
+	}
+	
+	nav.toolBarSocial .socialMedia .imageSocialMedia{
+		position:relative;
+		float:left;
+		padding-right:5%;
+		padding-left:5%;
+		width:100%;
+	}
+	
+	.imageSocialMedia .imgSocial{
+		float:left;
+		margin-left:0;
+		width:25%;
+		text-align:center;
+	}
+	
+	nav.toolBarMenu {
+		background:#7f60aa;
+		height:60px;
+		padding-right:5%;
+		padding-left:5%;
+		border-bottom: 3px solid rgba(0,0,0,0.14);
+	}
+	
+	.btnBars{
+		display: inline;
+		position: relative;
+		float: right;
+		color: #f35b47;
+		font-size: 2.8rem;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		margin-top: 10px;
+		border: 1px solid #f35b47;
+	}
+	
+	.btnBars:hover{
+		color:#5A427B;
+	}
+	
+	nav.toolBarMenu ul {
+		display:none;
+		position:absolute;
+		left:0;
+		top:0;
+		width:70%;
+		background:#5A427B;
+		margin:0;
+		padding:0;
+		height:auto;
+		z-index:10;
+	}
+	
+	nav.toolBarMenu ul li{
+		width:100%;
+		padding:0;
+		margin:0;
+		color:#000000;
+		height:auto;
+		border-bottom: 1px solid #000000;
+	}
+	
+	nav.toolBarMenu ul li a {
+		padding:15px;
+		margin:0;
+		color:#FFFFFF;
+	}
+	
+}
+
+.section{
+	position:relative;
+	float:left;
+	width:100%;
+	background:#FFFFFF;
+	padding-bottom:16px;
+}
+
+.section .header{
+	position:relative;
+	float:left;
+	width:100%;
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.section .header .title{
+	position:relative;
+	float:left;
+	width:100%;
+	text-align:center;
+	font-size:5rem;
+	color:#000000;
+	font-weight:bold;
+	margin-top:16px;
+	
+}
+
+.section .header .line{
+	position:relative;
+	float:left;
+	width:100%;
+	height:2px;
+	text-align:center;
+	background: url(../images/linea.png) no-repeat;
+	background-position:50%;
+	margin-bottom:16px;
+}
+
+.section .header .description{
+	position:relative;
+	float:left;
+	width:100%;
+	text-align:center;
+	font-size:1.4rem;
+	color:#000000;
+	margin-bottom:25px;
+}
+
+.section .body{
+	position:relative;
+	float:left;
+	width:100%;
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.welcome .body{
+	background:#f35b47;
+}
+
+.welcome .body .content{
+	position:relative;
+	float:left;
+	width:25%;
+	text-align:center;
+	padding:10px;
+}
+
+.welcome .body .content .image{
+	position:relative;
+	float:left;
+	width:100%;
+	margin-top:35px;
+}
+
+.welcome .body .content .title{
+	position:relative;
+	float:left;
+	font-size:1.5rem;
+	color:#FFFFFF;
+	margin-top:16px;
+	width:100%;
+}
+
+.welcome .body .content .description{
+	position:relative;
+	float:left;
+	font-size:1.2rem;
+	color:#FFFFFF;
+	margin:20px 10px;
+}
+
+@media (max-width: 767px){
+	
+	.welcome .body .content{
+		width:100%;
+	}
+	
+	.welcome .body .content .image{
+		margin-top:5px;
+	}
+	
+	.welcome .body .content .title{
+		margin-top:5px;
+	}
+	
+	.welcome .body .content .description{
+		margin:0 0;
+	}
+	
+}
+
+/*************nosotros*****************/
+
+#AboutUs .imgAbout, #AboutUs .infoAbout{
+	position:relative;
+	float:left;
+	width:50%;
+}
+
+#AboutUs .imgAbout img{
+	width:100%;
+}
+
+#AboutUs .infoAbout .content{
+	position:relative;
+	float:left;
+	width:50%;
+	font-size:1.3rem;
+	padding:16px;
+	padding-top:25px;
+}
+
+ #AboutUs .infoAbout .content p{
+	  float:left;
+	  position:relative;
+	  width:100%;
+	  text-align:center;
+	  color:#f35b47;
+	  font-size:1.6rem;
+}
+
+@media (min-width: 768px  ) and (max-width: 991px){
+	
+	#AboutUs .imgAbout, #AboutUs .infoAbout{
+		width:100%;
+	}
+	
+}
+
+@media (max-width: 767px){
+	
+	#AboutUs .imgAbout, #AboutUs .infoAbout{
+		width:100%;
+	}
+	
+	#AboutUs .infoAbout .content{
+		width:100%;
+		font-size:1.5rem;
+	}
+	
+	#AboutUs .infoAbout .content p{
+		font-size:2rem;
+	}
+	
+}
+
+/*************Servicios*****************/
+#services{
+	background:#7f60aa;
+}
+
+#services .header{
+	margin-top:35px;
+}
+
+#services .header .title{
+	color:#FFFFFF;
+}
+
+#services .body .content-tabs{
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+#services .body .content-tabs .tabsPanel{
+	position:relative;
+	float:left;
+	width:25%;
+	margin-bottom:16px;
+}
+
+
+.tabs{
+	display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+	background:#f35b47;
+	color:#FFFFFF;
+	margin-right:16px;
+	width:90%;
+	font-size:1.2rem;
+}
+
+a.tabs:hover{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+.tab-content .tab-pane{
+	color:#FFFFFF;
+	font-size:1.4rem;
+	
+}
+
+.tab-content .tab-pane p{
+	margin-top:16px;
+	color:#f6f6f6;
+	font-size:1.8rem;
+	margin-bottom:10px;
+}
+
+@media (min-width: 768px  ) and (max-width: 991px){
+	#services .body .content-tabs .tabsPanel{
+		width:33.33%;
+	}
+}
+
+@media (max-width: 767px){
+	#services .body .content-tabs .tabsPanel{
+		width:100%;
+	}
+	
+	.tabs{
+		width:100%;
+	}
+}
+
+/*********Galeria*****************/
+
+.section2{
+	
+}
+
+/***********Contacto*************/
+
+#contact .body .content{
+	position:relative;
+	float:left;
+	width:100%;
+	text-align:center;
+	margin:25px 0;
+}
+
+.contact-info{
+	position:relative;
+	float:left;
+	width:33.33%;
+}
+
+#formContact{
+	background:#7f60aa;
+	text-align:left;
+}
+
+#formContact .contact-form{
+	position:relative;
+	float:left;
+	width:33.33%;
+	text-align:left;
+	padding-right:16px;
+}
+
+#formContact .contact-form2{
+	position:relative;
+	float:left;
+	width:100%;
+	text-align:left;
+	padding-left:20%;
+	padding-right:20%;
+}
+
+#formContact label{
+	color:#f6f6f6;
+}
+
+#formContact input{
+	border-radius:0;
+	height:40px;
+	background:none;
+	border:2px solid #f6f6f6;
+	color:#f6f6f6;
+}
+
+#formContact textarea{
+	border-radius:0;
+	background:none;
+	border:2px solid #f6f6f6;
+	color:#f6f6f6;
+}
+
+#formContact .contact-form2.button{
+	text-align:center;
+}
+
+
+.btnSend{
+	border-radius:0;
+	background:none;
+	color:#f6f6f6;
+	border:2px solid #f6f6f6;
+}
+
+.btnSend:hover{
+	border-radius:0;
+	background:none;
+	color:#f6f6f6;
+	border:2px solid #f6f6f6;
+}
+
+#privacy {
+	font-size:1.2rem;
+}
+
+#privacy p{
+	font-size:1.5rem;
+	font-weight:bold;
+}
+
+@media (max-width: 767px){
+	
+	.contact-info{
+		width:100%;
+		margin-bottom:16px;
+	}
+	
+	#formContact .contact-form{
+		position:relative;
+		float:left;
+		width:100%;
+		text-align:left;
+		padding-right:0;
+	}
+	
+	#formContact .contact-form2{
+		position:relative;
+		float:left;
+		width:100%;
+		text-align:left;
+		padding-right:0;
+		padding-left:0;
+	}
+	
+}
+
+
+
+/*************General*****************/
+
+
+@media (min-width: 768px  ) and (max-width: 991px){
+	
+	.section .header{
+		padding-left:5%;
+		padding-right:5%;
+	}
+	
+	.section .body{
+		padding-left:5%;
+		padding-right:5%;
+	}
+	
+}
+
+@media (max-width: 767px){
+	
+	.section .header{
+		padding-left:3%;
+		padding-right:3%;
+	}
+	
+	.section .body{
+		padding-left:3%;
+		padding-right:3%;
+	}
+	
+	.section .header .title{
+		text-align:center;
+		font-size:3rem;
+	}
+	
+}
+
+
