@@ -106,7 +106,7 @@
 			<div class="body">
 				<div class="content" >
 					<div class="image">
-						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/arroba.png" />
+						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/1.png" />
 					</div>
 					
 					<div class="title"> 
@@ -118,7 +118,7 @@
 				</div>
 				<div class="content" >
 					<div class="image">
-						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/arroba.png" />
+						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/2.png" />
 					</div>
 					
 					<div class="title"> 
@@ -130,7 +130,7 @@
 				</div>
 				<div class="content" >
 					<div class="image">
-						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/arroba.png" />
+						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/3.png" />
 					</div>
 					
 					<div class="title"> 
@@ -142,7 +142,7 @@
 				</div>
 				<div class="content" >
 					<div class="image">
-						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/arroba.png" />
+						<img alt="jungle_camp_logo" src="<?php echo base_url(); ?>assets/images/4.png" />
 					</div>
 					
 					<div class="title"> 
